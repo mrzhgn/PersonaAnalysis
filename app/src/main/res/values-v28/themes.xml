@@ -1,0 +1,11 @@
+<!-- res/values-v28/themes.xml -->
+<resources>
+
+    <style name="Theme.Uplift" parent="Theme.Uplift.Base">
+        <item name="android:ambientShadowAlpha">0.2</item>
+        <item name="android:outlineAmbientShadowColor">@color/defaultOutlineAmbientShadowColor</item>
+        <item name="android:spotShadowAlpha">0.78</item>
+        <item name="android:outlineSpotShadowColor">@color/defaultOutlineSpotShadowColor</item>
+    </style>
+
+</resources>

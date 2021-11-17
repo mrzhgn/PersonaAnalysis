@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@drawable/gradient_drawable_2" >
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo12"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/photo_state2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fon_state2"
+        android:transformPivotX="200dp"
+        android:transformPivotY="0dp"
+        android:layout_centerHorizontal="true"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:adjustViewBounds="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/photo_state3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fon_state3"
+        android:transformPivotX="200dp"
+        android:transformPivotY="150dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:adjustViewBounds="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/graph_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/graph"
+        android:layout_below="@id/photo_state2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-320dp"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:adjustViewBounds="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/rubli_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 23 000 р."
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/arial_bold"
+        android:textSize="12sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/rubli_2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 41 000 р."
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/arial_bold"
+        android:textSize="12sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/rubli_3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="135dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-4 500 р."
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/arial_bold"
+        android:textSize="12sp"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/dialog1"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/photo"
+        android:layout_marginBottom="-236dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 10 000 р."
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/arial_bold"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog1state3"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/photo"
+        android:layout_marginBottom="-116dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog1state3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":)"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/arial"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/photo"
+        android:layout_marginTop="-162dp"
+        android:layout_marginRight="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+23 клиента"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/arial_bold"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog2state3"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/photo"
+        android:layout_marginTop="-320dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog2state3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 услуги"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/arial_bold"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_above="@id/next_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="28dp" >
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circleline1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_toRightOf="@id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circleline2"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_toRightOf="@id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circleline2"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" />
+
+        <ImageView
+            android:id="@+id/line4"
+            android:layout_toRightOf="@id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circleline2"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/next_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Весь салон\nв одном приложении"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:fontFamily="@font/uni_neue_book"
+        android:layout_above="@id/next_text_2"/>
+
+    <TextView
+        android:id="@+id/next_text_state2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Все данные в рижеме\nреального времени"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:fontFamily="@font/uni_neue_book"
+        android:layout_above="@id/next_text_2"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/next_text_state3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Будьте в курсе о\nваших сотрудниках"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:fontFamily="@font/uni_neue_book"
+        android:layout_above="@id/next_text_2"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/next_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="В вашем распоряжении будут более 15 самых важных и нужных показателей, с помощью которых Вы сможете с лёгкостью управлять салоном и добиваться своих целей"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/uni_neue_book"
+        android:layout_above="@id/next_button" />
+
+    <TextView
+        android:id="@+id/next_text_2_state2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Вы будете знать актуальные данные на данную минуту, за неделю, месяц или год. Доступ к вашим данным 24/7 с мобильного приложения или компьютера."
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/uni_neue_book"
+        android:layout_above="@id/next_button"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/next_text_2_state3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="От эффективности мастера зависит эффективность салона. Знайте насколько хорошо работают Ваши мастера и правильно выстраивайте с ними взаимоотношения"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/uni_neue_book"
+        android:layout_above="@id/next_button"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Далее"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/arial_bold"
+        android:background="@drawable/layout_bg_4"
+        android:elevation="8dp"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle" />
+
+</RelativeLayout>

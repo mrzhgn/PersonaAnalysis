@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#262937">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/escheodnologo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo222"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/toas"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginBottom="-26dp"
+            android:adjustViewBounds="true"
+            android:layout_above="@id/escheodnologo"
+            android:layout_toRightOf="@id/escheodnologo" />
+
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/login_section"
+            android:layout_marginLeft="28dp"
+            android:layout_marginBottom="40dp"
+            android:text="Связаться с тех.\nподдержкой"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:fontFamily="@font/uni_neue_book"
+            android:paddingTop="12dp"
+            android:src="@drawable/text1" />
+
+        <LinearLayout
+            android:id="@+id/login_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="12dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/emailhint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="2dp"
+                android:text="Как Вас зовут?"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:fontFamily="@font/arial_bold"
+                android:paddingTop="12dp"
+                android:src="@drawable/text1" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:ems="20"
+                android:textColorHint="#757575"
+                android:inputType="textPersonName"
+                android:background="@drawable/selector_3"
+                android:fontFamily="@font/arial_bold" />
+
+            <TextView
+                android:id="@+id/pswdhint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="2dp"
+                android:text="Укажите Ваш e-mail:"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:fontFamily="@font/arial_bold"
+                android:paddingTop="8dp"
+                android:src="@drawable/text1" />
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:textColorHint="#757575"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_3"
+                    android:fontFamily="@font/arial_bold" />
+
+            <EditText
+                android:id="@+id/problem"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="28dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:lines="10"
+                android:maxLines="20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Опишите Вашу проблему"
+                android:gravity="top"
+                android:textColorHint="#757575"
+                android:inputType="textMultiLine"
+                android:background="@drawable/selector_4"
+                android:fontFamily="@font/arial" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tprvt_button"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/layout_bg_4"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:elevation="2dp"
+        android:translationZ="6dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/voiti_salon"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отправить"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/arial"
+            android:textSize="20sp"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</LinearLayout>

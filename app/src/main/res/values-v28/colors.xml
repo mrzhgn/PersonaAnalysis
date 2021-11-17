@@ -1,0 +1,7 @@
+<!-- res/values-v28/colors.xml -->
+<resources>
+
+    <color name="defaultOutlineAmbientShadowColor">#0A000000</color>
+    <color name="defaultOutlineSpotShadowColor">#FF000000</color>
+
+</resources>

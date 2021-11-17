@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mrzhgn.personaanalysis.SwipeRefreshWithScrollLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:nestedScrollingEnabled="false"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#202434" >
+
+            <LinearLayout
+                android:id="@+id/violet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg_2"
+                android:orientation="vertical"
+                android:elevation="8dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="14dp"
+                    android:background="@drawable/layout_bg_2"
+                    android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/gradient_top_artplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_bg_5"
+                    android:elevation="20dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fon"
+                        android:alpha=".1"
+                        android:adjustViewBounds="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/back"
+                        android:background="@drawable/ripple1234"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="14dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:src="@drawable/ic_keyboard_backspace_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/set"
+                        android:layout_below="@id/back"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/uni_neue_book"
+                        android:text="Сеть имидж-лабораторий Персона"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/bolschelayoutov"
+                        android:layout_below="@id/set"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="14dp" >
+
+                        <TextView
+                            android:id="@+id/personatextview"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:fontFamily="@font/arial_bold"
+                            android:paddingRight="6dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"
+                            android:layout_gravity="center_vertical"/>
+
+                        <ImageView
+                            android:id="@+id/chair"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="6dp"
+                            android:transformPivotX="0dp"
+                            android:transformPivotY="0dp"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/chair_icon" />
+
+                        <TextView
+                            android:id="@+id/chaircol"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/arial"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/piople"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="6dp"
+                            android:transformPivotX="0dp"
+                            android:transformPivotY="0dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/piople_icon" />
+
+                        <TextView
+                            android:id="@+id/pioplecol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/arial"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/viruch"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/bolschelayoutov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:text="Чистая прибыль на 13/08"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/summa"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/viruch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:text="+0"
+                        android:textColor="@android:color/white"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/rub"
+                        android:layout_toRightOf="@id/summa"
+                        android:layout_below="@id/viruch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/uni_neue_book"
+                        android:text=" Р"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="3dp"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Чистая прибыль "
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/arial_bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="за последние 5 дней:"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/uni_neue_book"
+                            />
+
+                    </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="24dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Выручка "
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/arial_bold"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="за последние 5 дней:"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/uni_neue_book"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/layout_bg_1234" >
+
+                                <TextView
+                                    android:id="@+id/plan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/white"
+                                    android:paddingLeft="8dp"
+                                    android:fontFamily="@font/arial_bold"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/white"
+                                    android:fontFamily="@font/uni_neue_book"
+                                    android:paddingRight="8dp"
+                                    android:text="руб./день"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/arial_bold"
+                                android:text="план по выручке"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="24dp" />
+
+                </LinearLayout>
+
+<!--                <com.jjoe64.graphview.GraphView-->
+<!--                    android:id="@+id/graph"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_marginLeft="14dp"-->
+<!--                    android:layout_marginRight="14dp"-->
+<!--                    android:layout_marginTop="22dp" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Выберите период для статистики:"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="6dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp" >
+
+                    <Button
+                        android:id="@+id/stats_period"
+                        android:clickable="true"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/arial_bold"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/selector_6"
+                        style="?android:attr/borderlessButtonStyle"/>
+
+                    <TextView
+                        android:id="@+id/stats_period_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="—"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/arial_bold"
+                        android:layout_gravity="center_vertical" />
+
+                    <Button
+                        android:id="@+id/stats_period_3"
+                        android:clickable="true"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/arial_bold"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/selector_6"
+                        style="?android:attr/borderlessButtonStyle"/>
+
+                    <Button
+                        android:id="@+id/newjsontaskstart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:text="Выбрать даты"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/arial"
+                        android:textAllCaps="false"
+                        android:background="@drawable/ripple_2"
+                        android:layout_gravity="center_vertical"
+                        style="?android:attr/borderlessButtonStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/phinanci"
+                android:layout_below="@id/violet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Финансы"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/arial_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp" />
+
+            <TextView
+                android:id="@+id/phinsalona"
+                android:layout_below="@id/phinanci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="владельца салона:"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/arial"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="4dp" />
+
+            <RelativeLayout
+                android:id="@+id/chist_prib"
+                android:layout_below="@id/phinsalona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:padding="12dp"
+                android:clickable="false"
+                android:background="#383d55" >
+
+                <TextView
+                    android:id="@+id/pribtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Чистая прибыль"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/pribskok"
+                    android:text="!!! руб."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:layout_marginRight="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/threshold" />
+
+                <RelativeLayout
+                    android:id="@+id/threshold"
+                    android:background="@drawable/circle"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                        android:rotation="90"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:adjustViewBounds="true"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viruchka"
+                android:layout_below="@id/chist_prib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:clickable="false" >
+
+                <ImageView
+                    android:id="@+id/vverchh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="11dp"
+                    android:rotation="270"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:id="@+id/viruchtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Выручка"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/vverchh" />
+
+                <TextView
+                    android:id="@+id/viruchskok"
+                    android:text="!!! руб."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/uni_neue_book"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/threshold_2" />
+
+                <RelativeLayout
+                    android:id="@+id/threshold_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:rotation="90"
+                        android:src="@drawable/ic_keyboard_backspace_black_12dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rashodi"
+                android:layout_below="@id/viruchka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:clickable="false" >
+
+                <ImageView
+                    android:id="@+id/vnizzz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="9dp"
+                    android:rotation="90"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:id="@+id/rashtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Расходы"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/vnizzz" />
+
+                <TextView
+                    android:id="@+id/rashskok"
+                    android:text="!!! руб."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/uni_neue_book"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/threshold_3" />
+
+                <RelativeLayout
+                    android:id="@+id/threshold_3"
+                    android:background="@drawable/circle_4"
+                    android:layout_marginRight="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_keyboard_backspace_black_12dp"
+                        android:rotation="270"
+                        android:adjustViewBounds="true"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/polosa"
+                android:layout_below="@id/rashodi"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:orientation="horizontal"
+                android:elevation="8dp"
+                android:background="@drawable/layout_bg_12345" />
+
+            <RelativeLayout
+                android:id="@+id/prognoz"
+                android:layout_below="@id/polosa"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/stats"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/stats"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/uni_neue_book"
+                    android:text="Прогноз чистой прибыли\nи окупаемости инвестиций" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rotation="180"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_backspace_white_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/escheodin"
+                android:layout_below="@id/prognoz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" >
+
+                <TextView
+                    android:id="@+id/osnovnie"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Основные"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp" />
+
+                <TextView
+                    android:id="@+id/pokazateli"
+                    android:layout_below="@id/osnovnie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="показатели салона:"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="4dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/relpokaz"
+                    android:layout_below="@id/pokazateli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_pokazateli"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/kresla"
+                    android:layout_below="@id/relpokaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Данные"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp" />
+
+                <TextView
+                    android:id="@+id/kreslasalona"
+                    android:layout_below="@id/kresla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="по рабочим креслам салона:"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="4dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_kresla"
+                    android:layout_below="@id/kreslasalona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"/>
+
+
+                <TextView
+                    android:id="@+id/specialisti"
+                    android:layout_below="@id/recycler_kresla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Специалисты"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp" />
+
+                <TextView
+                    android:id="@+id/specsalona"
+                    android:layout_below="@id/specialisti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="салона:"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/vostreb"
+                    android:text="Востреб.\nспец-та"
+                    android:layout_below="@id/recycler_kresla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/uni_neue_book"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/srchek" />
+                <TextView
+                    android:id="@+id/srchek"
+                    android:text="Ср.чек"
+                    android:layout_below="@id/recycler_kresla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/uni_neue_book"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_alignParentRight="true" />
+
+                <RelativeLayout
+                    android:id="@+id/vostr_spec"
+                    android:layout_below="@id/specsalona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:padding="12dp"
+                    android:clickable="false"
+                    android:background="#383d55" >
+
+                    <TextView
+                        android:id="@+id/vostr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="В среднем на специалиста"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/arial_bold"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:id="@+id/percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/uni_neue_book"
+                        android:layout_marginRight="46dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/srchekkk" />
+
+                    <TextView
+                        android:id="@+id/srchekkk"
+                        android:text="!!! р."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/uni_neue_book"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_specialisti"
+                    android:layout_below="@id/vostr_spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/klienti"
+                    android:layout_below="@id/recycler_specialisti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Клиенты"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp" />
+
+                <TextView
+                    android:id="@+id/kliensalona"
+                    android:layout_below="@id/klienti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="салона:"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="4dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_klienti"
+                    android:layout_below="@id/kliensalona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/uslugi"
+                    android:layout_below="@id/recycler_klienti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Услуги"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp" />
+
+                <TextView
+                    android:id="@+id/uslsalona"
+                    android:layout_below="@id/uslugi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="салона:"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Доля услуги в \nобщей выручке"
+                    android:layout_below="@id/recycler_klienti"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/uni_neue_book"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="28dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_uslugi"
+                    android:layout_below="@id/uslsalona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/varvara"
+                android:layout_below="@id/escheodin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/layout_bg_4"
+                android:paddingTop="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="8dp"
+                android:elevation="2dp"
+                android:translationZ="6dp"
+                android:gravity="center"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/sost_salon"
+                    android:layout_marginLeft="12dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Наверх"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/vverch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/sost_salon"
+                    android:layout_alignParentTop="true"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/vverh" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</com.mrzhgn.personaanalysis.SwipeRefreshWithScrollLayout>
